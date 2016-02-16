@@ -151,6 +151,10 @@
                     <div class="portfolio-caption">
                         <h4>Asteroids</h4>
                         <p class="text-muted">Asteroid Waves</p>
+                        <span></span>
+                        <a href="https://www.youtube.com/watch?v=0OeaxBFzjeM" class="btn btn-default fa fa-youtube" target="_black"></a>
+                        <a href="https://github.com/humbertodias/pygame-sdl1-asteroids-pc" class="btn btn-default fa fa-github" target="_black"></a>
+                        <a target="_blank" class="btn btn-default fa fa-gamepad" href="games/asteroidwaves/web/index.html"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -161,10 +165,14 @@
                             </div>
                         </div>
                         <img src="img/portfolio/old-school-pong.png" class="img-responsive" alt="">
+
                     </a>
                     <div class="portfolio-caption">
                         <h4>Pong</h4>
                         <p class="text-muted">Old School Pong</p>
+                        <span></span>
+                        <a href="https://www.youtube.com/watch?v=Vh9mfa3liOI" class="btn btn-default fa fa-youtube" target="_black"></a>
+                        <a target="_blank" class="btn btn-default fa fa-gamepad" href="games/oldschoolpong/web/index.html"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -179,6 +187,7 @@
                     <div class="portfolio-caption">
                         <h4>Fruit Ninja</h4>
                         <p class="text-muted">Kiwi Ninja</p>
+                        <a target="_blank" class="btn btn-default fa fa-gamepad" href="games/kiwininja/web/index.html"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -189,10 +198,12 @@
                             </div>
                         </div>
                         <img src="img/portfolio/tim-was-not-alone.png" class="img-responsive" alt="">
+
                     </a>
                     <div class="portfolio-caption">
                         <h4>Thomas Was Alone</h4>
                         <p class="text-muted">Tim Was Not Alone</p>
+                        <a target="_blank" class="btn btn-default fa fa-gamepad" href="games/timwasnotalone/web/index.html"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -207,6 +218,7 @@
                     <div class="portfolio-caption">
                         <h4>Fall Down</h4>
                         <p class="text-muted">Avalanche</p>
+                        <a target="_blank" class="btn btn-default fa fa-gamepad" href="games/avalanche/web/index.html"></a>
                     </div>
                 </div>
 
@@ -460,7 +472,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" novalidate onsubmit="sendMail(); return false;">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
