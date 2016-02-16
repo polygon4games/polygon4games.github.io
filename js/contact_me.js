@@ -17,14 +17,19 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
+            // $frmNome =      $_POST["frmNome"];
+            // $frmEmail =     $_POST["frmEmail"];
+            // $frmMensagem =  $_POST["frmMensagem"];
+            
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "http://g4virtual.hol.es/send_email.php",
                 type: "POST",
                 data: {
-                    name: name,
+                    frmNome: name,
                     phone: phone,
-                    email: email,
-                    message: message
+                    frmEmail: email,
+                    frmMensagem: message
                 },
                 cache: false,
                 success: function() {
